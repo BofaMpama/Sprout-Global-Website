@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --limebox: #C7FF92;
+    --greenbox: #74BC31;
+    --fontsize1: 18px;
+    --fontsize2: 20px;
+    --fontsize3: 25px;
+    --fontsize4: 30px;
+    --primaryfont: sans-serif;
+    --secondaryfont: system-ui;
+}
+article.page-header{
+    margin-top: 80px;
+}
+article.page-header h1{
+    margin-left: 170px;
+    font-size: var(--fontsize4);
+    font-family: var(--secondaryfont);
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+article.page-header p{
+    font-size: 16px;
+    font-family: var(--secondaryfont);
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.mission-vision-goal{
+    display: flex;
+    gap: 50px;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+.mission-vision-goal .box{
+    display: block;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--secondaryfont);
+}
+.mission-vision-goal .box img{
+    width: 50px;
+    height: 50px;
+}
+.mission-vision-goal .box .header{
+    font-size: var(--fontsize2);
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 15px;
+    position: relative;
+    display: block;
+}
+.mission-vision-goal .box .header::after{
+    content: ' ';
+    position: absolute;
+    width: 15%;
+    height: 2px;
+    display: block;
+    background: black;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+.mission-vision-goal .box .text{
+    line-height: 30px;
+    margin-top: 20px;
+}
+.core-values{
+    margin-top: 100px;
+}
+.core-values .header{
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.core-values .header img{
+    width: 50px;
+    height: 50px;
+}
+.core-values .header h2{
+    font-family: var(--secondaryfont);
+    font-size: var(--fontsize3);
+    margin-top: 10px;
+    position: relative;
+    display: block;
+}
+.core-values .header h2::after{
+    content: ' ';
+    width: 15%;
+    height: 2px;
+    display: block;
+    background: black;
+    margin-top: 5px;
+    margin-left: 40%;
+}
+.box-group{
+    display: flex;
+    gap: 60px;
+    width: 50%;
+    margin-left: 25%;
+}
+.box-group .box{
+    min-width: 300px;
+    height: 240px;
+    margin-top: 50px;
+    padding: 5px;
+    padding-top: 30px;
+    background: linear-gradient(to bottom right, rgb(211, 204, 204), white 50%, rgb(184, 178, 178) 50%, white);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px grey;
+}
+.box-group .box img{
+    width: 50px;
+    height: 50px;
+    margin-left: 115px;
+}
+.box-group .box .header{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    font-family: var(--secondaryfont);
+    font-size: var(--fontsize1);
+    text-transform: capitalize;
+}
+.box-group .box .text{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    font-family: var(--secondaryfont);
+    font-size: 15px;
+    line-height: 25px;
+}
+.green-line{
+    width: 100%;
+    height: 40px;
+    background: #74BC31;
+    margin-top: 100px;
+}
+@media(max-width: 1300px){
+    article.page-header h1{
+        margin-left: 120px;
+    }
+    article.page-header p{
+        margin-left: 120px;
+    }
+    .mission-vision-goal{
+        margin-left: 120px;
+    }
+    .core-values .header{
+        margin-left: 36%;
+    }
+    .box-group{
+        margin-left: 23%;
+    }
+}
+@media(max-width: 1200px){
+    .core-values .header{
+        margin-left: 39%;
+    }
+    .box-group{
+        margin-left: 24%;
+    }
+}
+@media(max-width: 1100px){
+    .box-group{
+        margin-left: 20%;
+    }
+}
+@media(max-width: 1050px){
+    article.page-header h1{
+        margin-left: 80px;
+    }
+    article.page-header p{
+        margin-left: 80px;
+    }
+    .mission-vision-goal{
+        margin-left: 80px;
+    }
+    .core-values .header{
+        margin-left: 38%;
+    }
+    .box-group{
+        margin-left: 16%;
+    }
+}
+@media(max-width: 950px){
+    .core-values .header{
+        margin-left: 37%;
+    }
+    .box-group{
+        margin-left: 10%;
+    }
+}
+@media(max-width: 800px){
+    .box-group{
+        margin-left: 6%;
+    }
+}

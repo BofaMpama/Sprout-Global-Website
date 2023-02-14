@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --limebox: #C7FF92;
+    --greenbox: #74BC31;
+    --fontsize1: 18px;
+    --fontsize2: 20px;
+    --fontsize3: 25px;
+    --fontsize4: 30px;
+    --primaryfont: sans-serif;
+    --secondaryfont: system-ui;
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
+body{
+    font-family: var(--secondaryfont), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section.sec1{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+}
+section.sec1 .left-section{
+    margin-left: 100px;
+    width: 30%;
+}
+section.sec1 .nav-direction{
+    display: flex;
+    gap: 20px;
+}
+section.sec1 .nav-direction a{
+    font-family: var(--secondaryfont), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--fontsize1);
+    color: inherit;
+    text-transform: capitalize;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+section.sec1 .left-section h1{
+    font-size: var(--fontsize4);
+    text-transform: capitalize;
+    word-spacing: 5px;
+    margin-top: 80px;
+}
+section.sec1 .left-section .contact-options{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+section.sec1 .left-section .contact-options ul li{
+    display: flex;
+    gap: 20px;
+    line-height: 40px;
+}
+section.sec1 .left-section img{
+    width: 30px;
+    height: 30px;
+}
+.social-media-icons{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.social-media-icons .social-icon{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.social-media-icons .social-icon svg{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.book-button{
+    width: fit-content;
+    min-width: 200px;
+    padding: 12px 25px 12px 25px;
+    background: var(--greenbox);
+    color: #fff;
+    border-radius: 10px;
+    word-spacing: 3px;
+    font-family: var(--secondaryfont), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--fontsize1);
+    text-transform: capitalize;
+    border: none;
+    margin-top: 90px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+section.sec1 .right-section-photo {
+    margin-left: 50px;
+    width: 650px;
+}
+section.sec2{
+    min-width: 100%;
+    max-width: 100%;
+    background: rgb(238, 236, 236);
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+.text-area{
+    display: block;
+    width: fit-content;
+    padding-left: 100px;
+}
+.course-header{
+    font-family: var(--secondaryfont), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--fontsize1);
+    margin-top: 30px;
+    display: block;
+    height: fit-content;
+    position: relative;
+}
+.course-header::after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 2px;
+    margin-top: 5px;
+    display: block;
+    background: black;
+}
+.course-list{
+    margin-top: 25px;
+    font-family: var(--secondaryfont), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--fontsize1);
+}
+.course-list li{
+    list-style: none;
+    line-height: 35px;
+}
+.input-area{
+    width: 50%;
+    margin-left: 5%;
+}
+.input-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 5%;
+    margin-left: 100px;
+    margin-top: 12%;
+}
+.input-boxes input{
+    width: 42.5%;
+    height: 50px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.input-boxes input:nth-child(9){
+    width: 92.5%;
+    height: 80px;
+}
+.input-boxes input[type='text'], .input-boxes input[type='email'], .input-boxes input[type='tel']{
+    padding-left: 2%;
+    outline: 0.5px solid rgba(228, 203, 141, 0.644);
+}
+.input-boxes input:nth-child(9)[type='text']{
+    margin-top: 0;
+    padding-top: 0;
+}
+.input-boxes input:focus{
+    transform: scale(1.02);
+    outline: 0.5px solid gainsboro;
+}
+.input-boxes textarea{
+    outline: 1px solid gainsboro;
+    border: 1px solid rgb(212, 199, 167);
+    border-radius: 5px;
+    width: 93%;
+}
+.input-boxes textarea[type='text']{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: var(--secondaryfont), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.input-boxes textarea:focus{
+    outline: 2px solid gainsboro;
+    border: none;
+}
+.submit{
+    width: fit-content;
+    min-width: 150px;
+    padding: 12px 25px 12px 25px;
+    background: var(--greenbox);
+    color: #fff;
+    border-radius: 10px;
+    word-spacing: 3px;
+    font-family: var(--secondaryfont), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--fontsize1);
+    text-transform: capitalize;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+section.sec3{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section.sec3 img{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+}
+@media(max-width: 1300px){
+    section.sec1 .right-section-photo {
+        margin-left: 50px;
+        width: 600px;
+    }
+}
+@media(max-width: 1150px){
+    section.sec1 .left-section{
+        margin-left: 80px;
+        width: 30%;
+    }
+    section.sec1 .left-section .contact-options, .social-media-icons{
+        margin-left: 30px;
+    }
+    .social-media-icons .social-icon{
+        min-width: 45px;
+        height: 45px;
+    }
+    section.sec1 .right-section-photo {
+        margin-left: 50px;
+        width: 500px;
+        height: 500px;
+    }
+}
+@media(max-width: 900px){
+    section.sec1 .left-section{
+        margin-left: 80px;
+        width: 30%;
+    }
+    section.sec1 .left-section .contact-options, .social-media-icons{
+        margin-left: 20px;
+    }
+    section.sec1 .right-section-photo {
+        margin-left: 50px;
+        margin-top: 40px;
+        width: 400px;
+        height: 400px
+    }
+    section.sec3 img{
+        max-height: 400px;
+    }
+}
